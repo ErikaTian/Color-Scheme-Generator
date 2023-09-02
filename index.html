@@ -1,0 +1,45 @@
+<html>
+    <head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+      <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+			<div class="color-generator">
+				<div class="nav-bar">
+					<input type="color">
+					<select name="colors" id="colors">
+						<option value="monochrome">monochrome</option>
+						<option value="monochrome-dark">monochrome-dark</option>
+						<option value="monochrome-light">monochrome-light</option>
+						<option value="analogic">analogic</option>
+						<option value="complement">complement</option>
+						<option value="analogic-complement">analogic-complement</option>
+						<option value="triad">triad</option>
+						<!-- <option value="triad">quad</option> -->
+					</select>
+					<button>Get color scheme</button>
+				</div>
+
+				<div class="color-display">
+					<div class="color-box" style="background-color: #000000;"></div>
+					<div class="color-box" style="background-color: #151515;"></div>
+					<div class="color-box" style="background-color: #2B2A2A;"></div>
+					<div class="color-box" style="background-color: #413E3E;"></div>
+					<div class="color-box" style="background-color: #585252;"></div>
+					<!-- <div class="color-box"></div> -->
+				</div>
+
+				<div class="color-name">
+					<div class="color-hex">#000000</div>
+					<div class="color-hex">#151515</div>
+					<div class="color-hex">#2B2A2A</div>
+					<div class="color-hex">#413E3E</div>
+					<div class="color-hex">#585252</div>
+					<!-- <div class="color-hex"></div> -->
+				</div>
+			</div>
+      <script src="index.js"></script>
+    </body>
+</html>
