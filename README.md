@@ -1,8 +1,6 @@
 # Color Scheme Generator
 
-Quick start:
+## Demo
 
-```
-$ npm install
-$ npm start
-````
+https://github.com/ErikaTian/Color-Scheme-Generator/assets/55473016/833ef503-c9cd-4a57-9474-b64f36be31dd
+
