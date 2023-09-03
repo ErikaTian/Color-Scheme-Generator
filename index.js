@@ -11,7 +11,6 @@ function displayColors(colors) {
   }
 }
 
-
 function getColorScheme() {
   const selectedColor = document.querySelector('input[type="color"]').value;
   const colorHex = selectedColor.substring(1);
@@ -20,14 +19,14 @@ function getColorScheme() {
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
-        console.log("API Response Data:", data);
-        colors = data.colors.map((color) => color.hex.value);
-        console.log("Updated Colors:", colors);
-        displayColors(colors);
+      console.log("API Response Data:", data);
+      colors = data.colors.map((color) => color.hex.value);
+      console.log("Updated Colors:", colors);
+      displayColors(colors);
     })
     .catch((error) => {
       console.error('Error fetching color scheme:', error);
-		});
+    });
 }
 
 getColorButton.addEventListener('click', getColorScheme); // test
